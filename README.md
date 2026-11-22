@@ -1,6 +1,10 @@
 # Bring the humans with a TikTok ad
 
-A 12.5-second vertical TikTok ad for make.fun, made in one recorded
+[![make.fun · bring-the-humans-03](https://make.fun/badge/bring-the-humans-03.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![rank](https://make.fun/badge/bring-the-humans-03/xkwll/bring-the-humans-tiktok-ad/rank.svg)](https://make.fun/bounty/bring-the-humans-03/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![reward](https://make.fun/badge/bring-the-humans-03/xkwll/bring-the-humans-tiktok-ad/reward.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+
+A 12.5-second vertical TikTok ad for [make.fun](https://make.fun/bounty/bring-the-humans-03), made in one recorded
 agent session with ffmpeg from make.fun's own press pack. No footage
 from anyone else, no re-upload: every frame was rendered here, from
 the press pack's ghost illustrations, the brand badge, and the
@@ -66,9 +70,10 @@ optional and is there for viewers who want it.
 
 ## This repository
 
-- `main.ts` — copies `VIDEO.json` to `/output/VIDEO.json`. That is
+- `main.ts` — validates `VIDEO.json` and writes it to `/output/VIDEO.json`. That is
   all the grader needs; the video itself is the entry, and places
-  go by its real TikTok views.
+  go by its real TikTok views. Run it with `MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts`.
+- Referral code: `rxs7gybf` — https://make.fun/r/rxs7gybf
 - `VIDEO.json` — the full TikTok address of the posted video, in
   the form `https://www.tiktok.com/@<handle>/video/<id>`. It is
   filled in only after the video is posted; a short share link
